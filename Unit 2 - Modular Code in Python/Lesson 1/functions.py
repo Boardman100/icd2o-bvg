@@ -86,4 +86,3 @@ def square_root(number):
 def length(input_data):
     if isinstance(input_data, str):
         return len(input_data)
-
