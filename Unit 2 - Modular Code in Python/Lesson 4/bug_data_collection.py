@@ -7,7 +7,7 @@ def calculate_percent(total,count):
 def input_bug_type_and_count():
     bug_type = input(f"Input bug type: ")
     count = input_bug_counts(bug_type)
-    return (bug_type,count)
+    return bug_type,count
 
 def display_table(bug1,count1,bug2,count2,bug3,count3):
     total = count1+count2+count3
