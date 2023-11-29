@@ -22,30 +22,46 @@ def make_decision():
 battle = make_decision()
 
 def manage_your_health(health):
-    if random.randint(1,2) == 1:
-        damage = 500
+    num1 = random.randint(1,3)
+    if num1 == 1:
+        damage = 300
         new_health = health-damage
         if new_health <= 0:
             print(f"Oh no, {player_pokemon} has no health left...")
             exit()
-        print(f"Oh no! You took {damage} damage... You now have {new_health} health")
+        print(f"Oh no! Charizard is using burnt marshmallows. You took {damage} damage... You now have {new_health} health")
+    elif num1 == 2:
+        damage = 550
+        new_health = health-damage
+        if new_health <= 0:
+            print(f"Oh no, {player_pokemon} has no health left...")
+            exit()
+        print(f"Oh no! Charizard is using flamethower. You took {damage} damage... You now have {new_health} health")
     else:
         damage = 800
         new_health = health-damage
         if new_health <= 0:
             print(f"Oh no, {player_pokemon} has no health left...")
             exit()
-        print(f"The charizard is using his special move, flamethrower! You took {damage} damage... You now have {new_health} health")
+        print(f"The charizard is using his special move, forest fire! You took {damage} damage... You now have {new_health} health")
     return new_health
 
 def manage_op_health(health):
-    if random.randint(1,2) == 1:
-        damage = 500
+    num1 = random.randint(1,3)
+    if num1 == 1:
+        damage = 300
         new_health = health-damage
         if new_health <= 0:
-            print(f"Oh no, {player_pokemon} has no health left...")
+            print(f"Yes, charizard has no health left!")
             exit()
-        print(f"Yes! The charizard took {damage} damage! He now has {new_health} health remaining!")
+        print(f"Yes! {player_pokemon} is using hammer throw, dealing Charizard {damage} damage! He now has {new_health} health remaining!")
+    elif num1 == 2:
+        damage = 550
+        new_health = health-damage
+        if new_health <= 0:
+            print(f"Yes, charizard has no health left!")
+            exit()
+        print(f"Yes! {player_pokemon} is using axe slash, dealing Charizard {damage} damage! He now has {new_health} health remaining!")
     else:
         damage = 800
         new_health = health-damage
@@ -59,8 +75,7 @@ def manage_op_health(health):
                 else:
                     print("You missed the catch...")
             exit()
-        print(f"{player_pokemon} is using his special move, power slap! The charizard took {damage} damage! He now has {new_health} health")
-        #endgame()
+        print(f"Yes! {player_pokemon} is using power slap, dealing Charizard {damage} damage! He now has {new_health} health remaining!")
     return new_health
 
 def actions(battle,player_pokemon):
