@@ -1,6 +1,6 @@
 import math
-b = int(input("Input multiply to: "))
-c = int(input("Input add to: "))
+b = int(input("Input b: "))
+c = int(input("Input c: "))
 num1 = b/2
 num2 = num1**2
 num3 = num2-c
