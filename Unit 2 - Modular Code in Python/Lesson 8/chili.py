@@ -1,11 +1,5 @@
 spice = 0
 num_peppers = int(input())
-Poblano = 1500
-Mirasol = 6000
-Serrano = 15500
-Cayenne = 40000
-Thai = 75000
-Habanero = 125000
 while num_peppers>0:
     pepper = input()
     if pepper == "Poblano":
