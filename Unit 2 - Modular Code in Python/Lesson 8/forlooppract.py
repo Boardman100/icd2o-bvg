@@ -48,7 +48,5 @@ for i in range(1,num+1):
     output = output*i
 print(output)
 '''
-#Print odd numbers 500-1
-for number in range(500,0,-1):
-    if not number%2 == 0:
-        print(number)
+for i in range(10,-1,-1):
+    print(i)

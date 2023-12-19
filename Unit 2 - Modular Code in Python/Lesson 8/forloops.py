@@ -8,7 +8,7 @@ def example_one_a():
     for counter in range(10):
         print(counter)
 
-#Adds numbers of start to finish(counting end)
+#Adds numbers from start to finish(counting end)
 def example_two(start,finish):
     total = 0
     for i in range(start,finish+1):#+1 counts to endpoint
