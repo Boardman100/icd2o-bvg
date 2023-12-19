@@ -66,3 +66,11 @@ while i<integer:
     i+=1
 print(output)
 '''
+#Calculates factorial of an integer
+integer = int(input("Input your integer: "))
+i = 0
+output = 1
+while i<integer:
+    output = output*(integer-i)
+    i+=1
+print(output)
